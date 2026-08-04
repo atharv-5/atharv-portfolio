@@ -6,7 +6,7 @@ export interface SkillCategory {
 export const skillCategories: SkillCategory[] = [
   {
     category: "Languages & Data Science",
-    skills: ["SQL", "Python", "Java", "PostgreSQL", "Pandas", "NumPy"],
+    skills: ["SQL", "Python", "PostgreSQL", "Pandas", "NumPy"],
   },
   {
     category: "Machine Learning",
@@ -33,3 +33,5 @@ export const skillCategories: SkillCategory[] = [
     skills: ["Power BI", "Excel / Spreadsheets", "Git", "GitHub", "Vercel"],
   },
 ];
+
+export const skillsNote = "Also proficient in Java (DSA & problem-solving)";
