@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 export default function StatsBand() {
   const stats = [
-    { number: "03", label: "projects shipped" },
+    { number: "05", label: "projects shipped" },
     { number: "$2.29M", label: "revenue analyzed" },
-    { number: "6wk", label: "GenAI internship" },
+    { number: "8wk", label: "AI & Sustainability Internship" },
   ];
 
   return (

@@ -33,12 +33,18 @@ export default function Nav() {
         >
           ATHARV GEHLOD
         </Link>
-        <nav className="flex items-center gap-5 sm:gap-8 text-xs tracking-[0.05em] uppercase text-[var(--color-muted-2)] font-sans">
+        <nav className="flex items-center gap-4 sm:gap-7 text-xs tracking-[0.05em] uppercase text-[var(--color-muted-2)] font-sans">
           <a
             href="#projects"
             className="hover:text-[var(--color-dark)] transition-colors"
           >
             Projects
+          </a>
+          <a
+            href="#experience"
+            className="hover:text-[var(--color-dark)] transition-colors"
+          >
+            Experience
           </a>
           <a
             href="#insights"

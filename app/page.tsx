@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import FeaturedWork from "@/components/FeaturedWork";
 import StatsBand from "@/components/StatsBand";
+import Experience from "@/components/Experience";
 import Insights from "@/components/Insights";
 import Skills from "@/components/Skills";
 import Certifications from "@/components/Certifications";
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <FeaturedWork />
         <StatsBand />
+        <Experience />
         <Insights />
         <Skills />
         <Certifications />
