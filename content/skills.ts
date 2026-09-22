@@ -35,8 +35,8 @@ export const skillCategories: SkillCategory[] = [
   {
     category: "Frameworks, Tools & Cloud",
     skills: [
-      "React.js",
-      "Node.js",
+      "React.js (Basic)",
+      "Node.js (Basic)",
       "Express.js (Basics)",
       "Docker",
       "Git & GitHub",
