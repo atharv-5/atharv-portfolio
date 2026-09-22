@@ -29,7 +29,7 @@ export default function About() {
           I am a final-year B.Tech Computer Science & Engineering student at Parul University (expected graduation 2027). My journey began in full-stack software development, where I built complex user interfaces and REST APIs.
         </p>
         <p>
-          Recognizing the pivotal role of quantitative modeling in financial markets and enterprise strategy, I pivoted toward Data Analytics, Machine Learning, and Financial Technology. My goal is to apply predictive modeling, statistical analysis, and generative AI to drive data-informed decision making at premier financial institutions like JPMorgan Chase, Morgan Stanley, and Citi.
+          Recognizing the pivotal role of quantitative modeling in financial markets and enterprise strategy, I pivoted toward Data Analytics, Machine Learning, and Financial Technology. My goal is to apply predictive modeling, statistical analysis, and Explainable AI (XAI) to drive data-informed decision making at premier financial institutions like JPMorgan Chase, Morgan Stanley, and Citi.
         </p>
         <p>
           Beyond algorithms and SQL models, I place strong emphasis on model interpretability (SHAP/LIME), rigorous evaluation metrics, clean architecture, and institutional presentation standards.

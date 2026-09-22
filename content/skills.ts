@@ -13,19 +13,10 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       "scikit-learn",
       "Random Forest",
+      "XGBoost",
       "Model Evaluation & Metrics",
       "SHAP Interpretability",
       "Feature Engineering",
-    ],
-  },
-  {
-    category: "Generative AI",
-    skills: [
-      "LangChain",
-      "LangGraph",
-      "Retrieval-Augmented Generation (RAG)",
-      "Vector Embeddings",
-      "ChromaDB / FAISS",
     ],
   },
   {
