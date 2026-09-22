@@ -12,13 +12,13 @@ export default function Hero() {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <div className="text-xs font-semibold text-[var(--color-gold)] tracking-[0.15em] uppercase mb-4">
-          DATA ANALYTICS · MACHINE LEARNING
+          DATA ANALYTICS & MACHINE LEARNING
         </div>
-        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-normal text-[var(--color-dark)] leading-[1.2] mb-6 max-w-2xl">
-          From building interfaces to building the intelligence behind them
+        <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-normal text-[var(--color-dark)] leading-[1.2] mb-6 max-w-3xl">
+          Exploring datasets, querying databases, and uncovering data-driven stories
         </h1>
-        <p className="text-base sm:text-lg text-[var(--color-muted)] max-w-xl leading-relaxed mb-8">
-          I started in full-stack development, shipping products end-to-end. Now I build the models and pipelines that decide what those products should do next — with a focus on the rigor financial institutions demand.
+        <p className="text-base sm:text-lg text-[var(--color-muted)] max-w-2xl leading-relaxed mb-8">
+          Focused on Data Analytics, exploratory data analysis, and data modeling — turning raw datasets into clear dashboards and data-driven insights using SQL, Python, and Power BI.
         </p>
         <a
           href="#projects"

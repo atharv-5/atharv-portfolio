@@ -26,13 +26,13 @@ export default function About() {
         className="max-w-3xl space-y-6 text-base text-[var(--color-muted)] leading-relaxed"
       >
         <p>
-          I am a Computer Science undergraduate at Parul University (expected graduation 2027) based in Vadodara, Gujarat, India. My focus is on Data Analytics, Data Science, and Machine Learning — backed by hands-on SQL, Python, and AWS cloud experience along with a strong foundation in Data Structures & Algorithms (DSA) and Database Management Systems (DBMS).
+          I am a Computer Science undergraduate at Parul University (expected graduation 2027) based in Vadodara, Gujarat, India. My core focus is on Data Analytics, exploratory data analysis, and predictive modeling — leveraging SQL, Python, and Power BI to analyze complex datasets and extract business insights.
         </p>
         <p>
-          I build and deploy Explainable AI (XGBoost, SHAP) platforms, policy compliance RAG systems, and full-stack applications end-to-end — moving from raw data pipelines and machine learning algorithms to interactive web dashboards. I am comfortable navigating ambiguous technical problems both independently and in collaborative teams.
+          I work across the data lifecycle — from writing structured PostgreSQL queries and engineering features to training machine learning classifiers (XGBoost, Random Forest) and building interactive dashboards.
         </p>
         <p>
-          Beyond predictive modeling, I place strong emphasis on model interpretability (SHAP/LIME), regulation-aligned auditability (FCRA compliance), clean software architecture, and institutional presentation standards.
+          Beyond standard analytics, I place strong emphasis on model interpretability (SHAP), data cleaning, clean architecture, and clear visual communication.
         </p>
       </motion.div>
     </section>
