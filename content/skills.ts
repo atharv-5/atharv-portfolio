@@ -5,24 +5,45 @@ export interface SkillCategory {
 
 export const skillCategories: SkillCategory[] = [
   {
-    category: "Languages & Data Science",
-    skills: ["SQL", "Python", "PostgreSQL", "Pandas", "NumPy"],
+    category: "Languages",
+    skills: ["SQL", "Python", "Java", "JavaScript (Basic)"],
   },
   {
-    category: "Machine Learning",
+    category: "Data Analytics & ML",
     skills: [
-      "scikit-learn",
-      "Random Forest",
+      "Data Cleaning & EDA",
       "XGBoost",
-      "Model Evaluation & Metrics",
-      "SHAP Interpretability",
-      "Feature Engineering",
+      "scikit-learn",
+      "SHAP (Explainable AI)",
+      "Random Forest",
+      "Power BI",
+      "Excel",
     ],
   },
   {
-    category: "Visualization & Tools",
-    skills: ["Power BI", "Excel / Spreadsheets", "Git", "GitHub", "Vercel"],
+    category: "Libraries & Databases",
+    skills: [
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "PostgreSQL",
+      "MongoDB",
+      "MySQL",
+    ],
+  },
+  {
+    category: "Frameworks, Tools & Cloud",
+    skills: [
+      "React.js",
+      "Node.js",
+      "Express.js (Basics)",
+      "Docker",
+      "Git & GitHub",
+      "AWS (Cloud Fundamentals)",
+      "REST APIs & JWT",
+    ],
   },
 ];
 
-export const skillsNote = "Also proficient in Java (DSA & problem-solving)";
+export const skillsNote = "Also proficient in Data Structures & Algorithms (DSA) and Database Management Systems (DBMS)";

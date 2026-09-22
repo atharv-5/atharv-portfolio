@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import FeaturedWork from "@/components/FeaturedWork";
 import StatsBand from "@/components/StatsBand";
 import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 import Insights from "@/components/Insights";
 import Skills from "@/components/Skills";
 import Certifications from "@/components/Certifications";
@@ -19,6 +20,7 @@ export default function Home() {
         <FeaturedWork />
         <StatsBand />
         <Experience />
+        <Education />
         <Insights />
         <Skills />
         <Certifications />

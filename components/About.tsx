@@ -26,13 +26,13 @@ export default function About() {
         className="max-w-3xl space-y-6 text-base text-[var(--color-muted)] leading-relaxed"
       >
         <p>
-          I am a final-year B.Tech Computer Science & Engineering student at Parul University (expected graduation 2027). My journey began in full-stack software development, where I built complex user interfaces and REST APIs.
+          I am a Computer Science undergraduate at Parul University (expected graduation 2027) based in Vadodara, Gujarat, India. My focus is on Data Analytics, Data Science, and Machine Learning — backed by hands-on SQL, Python, and AWS cloud experience along with a strong foundation in Data Structures & Algorithms (DSA) and Database Management Systems (DBMS).
         </p>
         <p>
-          Recognizing the pivotal role of quantitative modeling in financial markets and enterprise strategy, I pivoted toward Data Analytics, Machine Learning, and Financial Technology. My goal is to apply predictive modeling, statistical analysis, and Explainable AI (XAI) to drive data-informed decision making at premier financial institutions like JPMorgan Chase, Morgan Stanley, and Citi.
+          I build and deploy Explainable AI (XGBoost, SHAP) platforms, policy compliance RAG systems, and full-stack applications end-to-end — moving from raw data pipelines and machine learning algorithms to interactive web dashboards. I am comfortable navigating ambiguous technical problems both independently and in collaborative teams.
         </p>
         <p>
-          Beyond algorithms and SQL models, I place strong emphasis on model interpretability (SHAP/LIME), rigorous evaluation metrics, clean architecture, and institutional presentation standards.
+          Beyond predictive modeling, I place strong emphasis on model interpretability (SHAP/LIME), regulation-aligned auditability (FCRA compliance), clean software architecture, and institutional presentation standards.
         </p>
       </motion.div>
     </section>

@@ -14,47 +14,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "athrion-ai",
-    number: "01",
-    category: "GENERATIVE AI & FULL-STACK",
-    title: "Athrion AI — Interview Prep & Resume Platform",
-    shortDescription:
-      "Interview-prep and resume-analysis platform powered by Groq LLaMA 3.3 70B, Node.js, and React with end-to-end security auditing.",
-    problem:
-      "Job applicants often struggle to receive instantaneous, high-quality technical interview feedback and resume ATS optimization tailored to target roles.",
-    approach:
-      "Architected a scalable web application leveraging Groq LLaMA 3.3 70B for low-latency AI responses. Implemented secure JWT authentication middleware, robust DB fallbacks, and an editorial UI redesign.",
-    result:
-      "Audited and patched core auth security vulnerabilities, optimized prompt latency to sub-second responses, and launched a full UI redesign.",
-    techStack: [
-      "React / Vite",
-      "Node.js / Express",
-      "MongoDB",
-      "Groq LLaMA 3.3 70B",
-      "JWT",
-      "Tailwind CSS",
-    ],
-    githubUrl: "https://github.com/atharv-5/athrion-interview-platform",
-  },
-  {
     slug: "credit-risk-explainability",
-    number: "02",
+    number: "01",
     category: "EXPLAINABLE AI & MACHINE LEARNING",
     title: "Credit Risk Explainability & AI Underwriting Agent",
     shortDescription:
-      "End-to-end Explainable AI (XAI) platform using XGBoost, SHAP feature attributions, policy compliance RAG, and Streamlit dashboard.",
+      "End-to-end explainable AI (XAI) credit-risk platform on the Home Credit Default Risk dataset using XGBoost (ROC-AUC 0.7554), SHAP TreeExplainer, policy compliance RAG, and Streamlit.",
     problem:
-      "Traditional credit scoring models act as black boxes, making it difficult for financial institutions to comply with FCRA adverse action notice requirements and explain decision drivers to applicants.",
+      "Traditional credit scoring models operate as black boxes, preventing financial institutions from meeting FCRA adverse action notice compliance and explaining specific decision drivers to applicants.",
     approach:
-      "Trained an XGBoost model on applicant financial metrics, integrated a game-theoretic SHAP TreeExplainer engine for local & global feature attributions, indexed credit underwriting policy rules, and built an automated decision agent generating human-readable compliance reports and remediation plans.",
+      "Built an end-to-end explainable AI (XAI) credit-risk platform on the Home Credit Default Risk dataset; trained an XGBoost classifier (ROC-AUC 0.7554) with SHAP (TreeExplainer) for per-decision feature attribution. Designed a policy-compliance RAG layer and Streamlit dashboard delivering auditable, regulation-aligned explanations for underwriting decisions.",
     result:
-      "Delivered real-time default probability scoring, interactive SHAP waterfall/impact visualizations, regulatory citations, and actionable counterfactual advice.",
+      "Delivered real-time default probability scoring, auditable SHAP per-decision feature attributions, regulatory policy compliance citations, and actionable applicant counterfactual guidance.",
     techStack: [
       "Python",
       "XGBoost",
-      "SHAP (XAI)",
-      "Streamlit",
+      "SHAP",
       "RAG / Policy Search",
+      "Streamlit",
       "scikit-learn",
       "Pandas",
     ],
@@ -62,18 +39,41 @@ export const projects: Project[] = [
     liveUrl: "https://credit-risk-explainability-assistant.streamlit.app",
   },
   {
+    slug: "athrion-ai",
+    number: "02",
+    category: "GENERATIVE AI & FULL-STACK",
+    title: "Athrion AI — Interview Prep & Resume Analysis Platform",
+    shortDescription:
+      "Full-stack platform combining AI mock interviews, an AI resume analyzer, and a performance dashboard powered by Groq (LLaMA 3.3 70B), Node.js/Express, React, and MongoDB.",
+    problem:
+      "Job applicants lack instantaneous, high-quality technical interview feedback and resume ATS optimization tailored to target roles.",
+    approach:
+      "Co-built and deployed a full-stack platform combining AI mock interviews, an AI resume analyzer, and a performance dashboard; owned backend architecture, database design, and AI pipeline integration. Engineered a multi-tier AI pipeline with automatic failover (Groq LLaMA 3.3 70B -> OpenRouter -> local simulation) and a resume-parsing pipeline that extracts skills and recommends target roles.",
+    result:
+      "Achieved sub-second prompt latency with multi-tier failover resiliency, automated resume skill extraction, and launched a secure full-stack user dashboard.",
+    techStack: [
+      "React",
+      "Node.js / Express",
+      "MongoDB",
+      "Groq (LLaMA 3.3 70B)",
+      "JWT",
+      "Tailwind CSS",
+    ],
+    githubUrl: "https://github.com/atharv-5/athrion-interview-platform",
+  },
+  {
     slug: "customer-churn-analysis",
     number: "03",
     category: "MACHINE LEARNING & SQL",
     title: "Customer Churn Analysis & Retention Strategy",
     shortDescription:
-      "End-to-end exploratory data analysis and predictive modeling identifying key churn drivers across 7,043 subscribers using Python, Random Forest, and SQL.",
+      "EDA and Random Forest classification pipeline on 7,043 telecom customers, finding a 26.54% churn rate with Contract Type (42.7% vs 2.8% for 2-year) as the top driver.",
     problem:
-      "Subscription service attrition was severely impacting recurring revenue, but decision-makers lacked exact segmentation data on high-risk tenure groups and key product vulnerability drivers.",
+      "Subscriber attrition severely impacted recurring revenue, but decision-makers lacked exact segmentation data on high-risk tenure groups and key product vulnerability vectors.",
     approach:
-      "Processed 7,043 customer records with Python (Pandas, NumPy) and structured SQL queries in PostgreSQL. Trained a Random Forest Classifier to score feature importance. Identified Month-to-Month contracts (42.7% churn rate vs 2.8% for 2-year contracts) and first-year tenure (53% of total churn) as primary vulnerability vectors.",
+      "Built an EDA and Random Forest classification pipeline on 7,043 telecom customers, finding a 26.54% churn rate with Contract Type as the top driver (42.7% vs. 2.8% for two-year contracts). Found 53% of churned customers left within their first 12 months; translated findings into 3 retention strategies (contract incentives, onboarding campaigns, tech-support bundling).",
     result:
-      "Analyzed $2.2M+ implicit risk value across 7,043 customers and formulated strategic retention playbooks (annual contract incentives, first-6-month onboarding checks, and bundled tech support).",
+      "Formulated 3 targeted retention strategies (annual contract incentives, first-year onboarding touchpoints, and tech-support bundling) to mitigate high-risk customer attrition.",
     techStack: ["Python", "scikit-learn", "Random Forest", "PostgreSQL / SQL", "Pandas", "Matplotlib / Seaborn"],
     githubUrl: "https://github.com/atharv-5/churn-predictor",
   },
@@ -83,19 +83,19 @@ export const projects: Project[] = [
     category: "AI FOR SUSTAINABILITY & TIME-SERIES",
     title: "AirLens: Urban Air Quality Prediction & Explainability",
     shortDescription:
-      "Urban AQI prediction and explainability engine leveraging XGBoost regression, SHAP pollutant attributions, and Gemini LLM health advisories.",
+      "AI-powered urban AQI prediction & explainability platform — trained an XGBoost regression model on Air Quality Data in India, applied SHAP pollutant attribution, and layered Gemini LLM for health advisories.",
     problem:
-      "Urban air pollution surges in Indian metros strain municipal healthcare, but traditional forecast models fail to explain why pollution spikes occur or what specific policy interventions will reduce AQI.",
+      "Urban air pollution surges in Indian metros strain municipal healthcare, but traditional forecast models fail to explain why pollution spikes occur or what specific interventions will reduce AQI.",
     approach:
-      "Engineered temporal rolling features and city encodings from multi-city CPCB air quality datasets, trained an XGBoost regressor, extracted SHAP pollutant drivers (PM2.5, PM10, NO2), and integrated Gemini 1.5 Flash LLM to generate health advisories.",
+      "Trained an XGBoost regression model on the Air Quality Data in India dataset, applied SHAP for pollutant-level feature attribution, and layered in an LLM-driven conversational assistant (Gemini) for health advisories, deployed via Streamlit.",
     result:
       "Achieved R² > 0.88 AQI forecasting accuracy with real-time SHAP pollutant waterfall charts and automated municipal health advisories.",
     techStack: [
       "Python",
       "XGBoost",
-      "SHAP (XAI)",
+      "SHAP",
+      "Gemini LLM",
       "Streamlit",
-      "Gemini 1.5 Flash",
       "Pandas",
       "scikit-learn",
     ],

@@ -23,6 +23,7 @@ export default function Nav() {
   const navLinks = [
     { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
+    { name: "Education", href: "#education" },
     { name: "Insights", href: "#insights" },
     { name: "Skills", href: "#skills" },
     { name: "Certifications", href: "#certifications" },
@@ -48,7 +49,7 @@ export default function Nav() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-5 lg:gap-7 text-xs tracking-[0.05em] uppercase text-[var(--color-muted-2)] font-sans">
+        <nav className="hidden md:flex items-center gap-4 lg:gap-6 text-xs tracking-[0.05em] uppercase text-[var(--color-muted-2)] font-sans">
           {navLinks.map((link) => (
             <a
               key={link.name}
