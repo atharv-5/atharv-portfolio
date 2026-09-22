@@ -58,13 +58,13 @@ export default function ModelMetricsWidget() {
   const Icon = selected.icon;
 
   return (
-    <div className="my-8 p-6 sm:p-8 bg-[var(--color-cream-block)] border border-[var(--color-border)] rounded-[2px]">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-[var(--color-border)]">
+    <div className="my-8 p-4 sm:p-8 bg-[var(--color-cream-block)] border border-[var(--color-border)] rounded-[2px] overflow-hidden">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-4 border-b border-[var(--color-border)]">
         <div>
-          <span className="text-xs font-semibold text-[var(--color-gold)] uppercase tracking-[0.1em]">
+          <span className="text-[11px] sm:text-xs font-semibold text-[var(--color-gold)] uppercase tracking-[0.1em]">
             Interactive Model Diagnostics
           </span>
-          <h4 className="font-serif text-lg text-[var(--color-dark)] mt-0.5">
+          <h4 className="font-serif text-base sm:text-lg text-[var(--color-dark)] mt-0.5">
             Institutional Risk Model Validation
           </h4>
         </div>
@@ -82,23 +82,23 @@ export default function ModelMetricsWidget() {
             <button
               key={m.id}
               onClick={() => setActiveMetric(m.id)}
-              className={`p-3 text-left border rounded-[2px] transition-all flex flex-col justify-between h-20 ${
+              className={`p-2.5 sm:p-3 text-left border rounded-[2px] transition-all flex flex-col justify-between h-20 cursor-pointer ${
                 isActive
                   ? "bg-[var(--color-dark)] text-[var(--color-bg)] border-[var(--color-dark)] shadow-xs"
                   : "bg-[var(--color-bg)] text-[var(--color-muted)] border-[var(--color-border)] hover:border-[var(--color-gold)]"
               }`}
             >
-              <div className="flex items-center justify-between w-full">
-                <span className="text-[11px] uppercase tracking-wider font-medium truncate">
+              <div className="flex items-center justify-between w-full gap-1">
+                <span className="text-[10px] sm:text-[11px] uppercase tracking-wider font-medium truncate">
                   {m.name.split(" ")[0]}
                 </span>
                 <TabIcon
-                  className={`w-3.5 h-3.5 ${
+                  className={`w-3.5 h-3.5 shrink-0 ${
                     isActive ? "text-[var(--color-gold)]" : "opacity-50"
                   }`}
                 />
               </div>
-              <span className="font-serif text-lg leading-none mt-1">
+              <span className="font-serif text-base sm:text-lg leading-none mt-1">
                 {m.value}
               </span>
             </button>
@@ -114,18 +114,18 @@ export default function ModelMetricsWidget() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -8 }}
           transition={{ duration: 0.25 }}
-          className="bg-[var(--color-bg)] p-5 border border-[var(--color-border)] rounded-[2px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
+          className="bg-[var(--color-bg)] p-4 sm:p-5 border border-[var(--color-border)] rounded-[2px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
         >
-          <div className="flex items-start gap-4">
-            <div className="p-3 bg-[var(--color-cream-block)] border border-[var(--color-border)] rounded-[2px] text-[var(--color-gold)] shrink-0 hidden sm:block">
+          <div className="flex items-start gap-3 sm:gap-4">
+            <div className="p-2.5 sm:p-3 bg-[var(--color-cream-block)] border border-[var(--color-border)] rounded-[2px] text-[var(--color-gold)] shrink-0 hidden sm:block">
               <Icon className="w-5 h-5" />
             </div>
             <div>
-              <div className="flex items-center gap-3">
-                <h5 className="font-serif text-base text-[var(--color-dark)]">
+              <div className="flex flex-wrap items-center gap-2">
+                <h5 className="font-serif text-sm sm:text-base text-[var(--color-dark)]">
                   {selected.name}
                 </h5>
-                <span className="text-[11px] font-sans font-semibold text-[var(--color-gold)] tracking-wide uppercase">
+                <span className="text-[10px] sm:text-[11px] font-sans font-semibold text-[var(--color-gold)] tracking-wide uppercase">
                   [{selected.benchmark}]
                 </span>
               </div>
@@ -135,11 +135,11 @@ export default function ModelMetricsWidget() {
             </div>
           </div>
 
-          <div className="sm:text-right shrink-0 border-t sm:border-t-0 pt-3 sm:pt-0 border-[var(--color-border)] w-full sm:w-auto">
+          <div className="sm:text-right shrink-0 border-t sm:border-t-0 pt-3 sm:pt-0 border-[var(--color-border)] w-full sm:w-auto flex sm:flex-col justify-between items-center sm:items-end">
             <div className="text-xs uppercase tracking-wider text-[var(--color-muted-2)]">
               Metric Value
             </div>
-            <div className="font-serif text-2xl text-[var(--color-dark)] font-semibold mt-0.5">
+            <div className="font-serif text-xl sm:text-2xl text-[var(--color-dark)] font-semibold mt-0.5">
               {selected.value}
             </div>
           </div>
