@@ -14,40 +14,8 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "customer-churn-analysis",
-    number: "01",
-    category: "MACHINE LEARNING & SQL",
-    title: "Customer Churn Analysis & Retention Strategy",
-    shortDescription:
-      "End-to-end exploratory data analysis and predictive modeling identifying key churn drivers across 7,043 subscribers using Python, Random Forest, and SQL.",
-    problem:
-      "Subscription service attrition was severely impacting recurring revenue, but decision-makers lacked exact segmentation data on high-risk tenure groups and key product vulnerability drivers.",
-    approach:
-      "Processed 7,043 customer records with Python (Pandas, NumPy) and structured SQL queries in PostgreSQL. Trained a Random Forest Classifier to score feature importance. Identified Month-to-Month contracts (42.7% churn rate vs 2.8% for 2-year contracts) and first-year tenure (53% of total churn) as primary vulnerability vectors.",
-    result:
-      "Analyzed $2.2M+ implicit risk value across 7,043 customers and formulated strategic retention playbooks (annual contract incentives, first-6-month onboarding checks, and bundled tech support).",
-    techStack: ["Python", "scikit-learn", "Random Forest", "PostgreSQL / SQL", "Pandas", "Matplotlib / Seaborn"],
-    githubUrl: "https://github.com/atharv-5/churn-predictor",
-  },
-  {
-    slug: "sales-performance-dashboard",
-    number: "02",
-    category: "DATA ANALYTICS & BI",
-    title: "Sales & Business Performance Dashboard",
-    shortDescription:
-      "ETL pipeline in Python, PostgreSQL querying, and interactive Power BI dashboard tracking $2.29M revenue across 4,922 orders.",
-    problem:
-      "Executive leaders lacked centralized, real-time visibility into multi-regional sales performance, product category profitability, and delivery SLA bottlenecks.",
-    approach:
-      "Built an automated Python ETL pipeline (sqlalchemy, psycopg2) to clean and load Superstore sales data into PostgreSQL. Authored analytical SQL queries for KPI aggregation and connected Power BI for dynamic regional and category filtering.",
-    result:
-      "Delivered real-time executive dashboard tracking $2,297,200.86 total revenue, 4,922 orders, 793 unique customers, top-performing West region ($710.2K), and average 3.96-day shipping SLA.",
-    techStack: ["Power BI", "PostgreSQL", "SQL", "Python ETL", "Pandas", "Data Analytics"],
-    githubUrl: "https://github.com/atharv-5/sales-business-performance-dashboard",
-  },
-  {
     slug: "athrion-ai",
-    number: "03",
+    number: "01",
     category: "GENERATIVE AI & FULL-STACK",
     title: "Athrion AI — Interview Prep & Resume Platform",
     shortDescription:
@@ -70,7 +38,7 @@ export const projects: Project[] = [
   },
   {
     slug: "credit-risk-explainability",
-    number: "04",
+    number: "02",
     category: "EXPLAINABLE AI & MACHINE LEARNING",
     title: "Credit Risk Explainability & AI Underwriting Agent",
     shortDescription:
@@ -94,8 +62,24 @@ export const projects: Project[] = [
     liveUrl: "https://credit-risk-explainability-assistant.streamlit.app",
   },
   {
+    slug: "customer-churn-analysis",
+    number: "03",
+    category: "MACHINE LEARNING & SQL",
+    title: "Customer Churn Analysis & Retention Strategy",
+    shortDescription:
+      "End-to-end exploratory data analysis and predictive modeling identifying key churn drivers across 7,043 subscribers using Python, Random Forest, and SQL.",
+    problem:
+      "Subscription service attrition was severely impacting recurring revenue, but decision-makers lacked exact segmentation data on high-risk tenure groups and key product vulnerability drivers.",
+    approach:
+      "Processed 7,043 customer records with Python (Pandas, NumPy) and structured SQL queries in PostgreSQL. Trained a Random Forest Classifier to score feature importance. Identified Month-to-Month contracts (42.7% churn rate vs 2.8% for 2-year contracts) and first-year tenure (53% of total churn) as primary vulnerability vectors.",
+    result:
+      "Analyzed $2.2M+ implicit risk value across 7,043 customers and formulated strategic retention playbooks (annual contract incentives, first-6-month onboarding checks, and bundled tech support).",
+    techStack: ["Python", "scikit-learn", "Random Forest", "PostgreSQL / SQL", "Pandas", "Matplotlib / Seaborn"],
+    githubUrl: "https://github.com/atharv-5/churn-predictor",
+  },
+  {
     slug: "airlens-aqi-explainability",
-    number: "05",
+    number: "04",
     category: "AI FOR SUSTAINABILITY & TIME-SERIES",
     title: "AirLens: Urban Air Quality Prediction & Explainability",
     shortDescription:
@@ -117,5 +101,21 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/atharv-5/airlens-aqi-explainability",
     liveUrl: "https://airlens-aqi-explainability.streamlit.app",
+  },
+  {
+    slug: "sales-performance-dashboard",
+    number: "05",
+    category: "DATA ANALYTICS & BI",
+    title: "Sales & Business Performance Dashboard",
+    shortDescription:
+      "ETL pipeline in Python, PostgreSQL querying, and interactive Power BI dashboard tracking $2.29M revenue across 4,922 orders.",
+    problem:
+      "Executive leaders lacked centralized, real-time visibility into multi-regional sales performance, product category profitability, and delivery SLA bottlenecks.",
+    approach:
+      "Built an automated Python ETL pipeline (sqlalchemy, psycopg2) to clean and load Superstore sales data into PostgreSQL. Authored analytical SQL queries for KPI aggregation and connected Power BI for dynamic regional and category filtering.",
+    result:
+      "Delivered real-time executive dashboard tracking $2,297,200.86 total revenue, 4,922 orders, 793 unique customers, top-performing West region ($710.2K), and average 3.96-day shipping SLA.",
+    techStack: ["Power BI", "PostgreSQL", "SQL", "Python ETL", "Pandas", "Data Analytics"],
+    githubUrl: "https://github.com/atharv-5/sales-business-performance-dashboard",
   },
 ];
